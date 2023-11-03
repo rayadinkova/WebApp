@@ -1,0 +1,37 @@
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.2rem;
+    background-color: rgba(19, 19, 23, 1);
+}
+
+.row-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row-1 img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.my-lists-page-title{
+    font-size: 28px;
+    margin-left: 0.5rem;
+}
+
+.row-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.my-lists-search-icon, .my-lists-bell-icon{
+    font-size: 1.7rem;
+}
+
+.my-lists-search-icon{
+    margin-right: 0.5rem;
+}

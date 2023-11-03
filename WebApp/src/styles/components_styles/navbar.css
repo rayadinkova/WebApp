@@ -1,0 +1,27 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 0.6rem;
+}
+
+.navbar-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar-container li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-container li p{
+    margin-top: 0.5rem;
+}
+
+.home-icon, .mylists-icon, .search-icon{
+    font-size: 2rem;
+}
