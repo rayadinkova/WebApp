@@ -1,3 +1,5 @@
+
+
 .navbar-container{
     display: flex;
     justify-content: space-evenly;
@@ -24,4 +26,10 @@
 
 .home-icon, .mylists-icon, .search-icon{
     font-size: 2rem;
+}
+
+/* Link tag styling */
+.navbar-link-styles{
+    text-decoration: none;
+    color: white;
 }

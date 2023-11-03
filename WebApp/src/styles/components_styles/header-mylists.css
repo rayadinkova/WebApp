@@ -1,7 +1,8 @@
-.header-wrapper{
+.my-lists-header-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1.2rem;
     background-color: rgba(19, 19, 23, 1);
 }

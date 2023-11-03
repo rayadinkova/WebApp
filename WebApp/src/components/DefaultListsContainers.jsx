@@ -1,12 +1,14 @@
+import * as React from "react";
 import "../styles/components_styles/defaultlistscontainers.css";
 import { BiSolidLockAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 export default function DefaultListsContainers() {
   return (
     <>
       <div className="default-lists-container-wrapper">
         <div className="default-lists-container-row-1">
-          <div className="to-watch-container">
+          <Link to="/towatch" className="to-watch-link-style">
             <div className="to-watch-container-content">
               <div className="to-watch-h3">
                 <h3>To Watch</h3>
@@ -17,7 +19,7 @@ export default function DefaultListsContainers() {
                 <BiSolidLockAlt />
               </div>
             </div>
-          </div>
+          </Link>
 
           <div className="seen-container">
             <div className="seen-container-content">
