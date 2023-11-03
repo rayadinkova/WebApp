@@ -44,6 +44,7 @@ export default function Navbar() {
       <Routes>
         <Route path="/mylists" element={<MyLists />} />
         <Route path="/towatch" element={<ToWatch />} />
+        <Route path="/createlist" element={{}} />
       </Routes>
     </Router>
   );
