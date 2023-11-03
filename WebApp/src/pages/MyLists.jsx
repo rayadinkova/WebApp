@@ -12,8 +12,9 @@ export default function MyLists() {
       <DefaultLists />
       <YourLists />
 
-      <Link></Link>
-      <AiFillPlusCircle className="create-btn" />
+      <Link to="/createlist">
+        <AiFillPlusCircle className="create-btn" />
+      </Link>
     </>
   );
 }

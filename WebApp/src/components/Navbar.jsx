@@ -10,6 +10,8 @@ import { GoSearch } from "react-icons/go";
 }
 import MyLists from "../pages/MyLists";
 import ToWatch from "../pages/ToWatch";
+import CreateList from "../pages/CreateList";
+import Home from "../pages/Home";
 
 export default function Navbar() {
   return (
@@ -17,10 +19,12 @@ export default function Navbar() {
       <div className="nav-wrapper">
         <nav className="navbar-container">
           <ul>
-            <li>
-              <GoHome className="home-icon" />
-              <p>Home</p>
-            </li>
+            <Link to="/home" className="navbar-link-styles">
+              <li>
+                <GoHome className="home-icon" />
+                <p>Home</p>
+              </li>
+            </Link>
           </ul>
 
           <ul>
@@ -42,9 +46,10 @@ export default function Navbar() {
       </div>
 
       <Routes>
+        <Route path="/home" element={<Home />} />
         <Route path="/mylists" element={<MyLists />} />
         <Route path="/towatch" element={<ToWatch />} />
-        <Route path="/createlist" element={{}} />
+        <Route path="/createlist" element={<CreateList />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,157 @@
+.default-home-container-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-top: 0rem;
+}
+
+
+/* Row 1 */
+.default-home-container-row-1{
+    display: flex;
+    flex-direction: row;
+}
+
+/* To Watch container */
+
+/* To Watch Link tag style*/
+
+.to-watch-container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.9rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.to-watch-h3{
+    align-items: left;
+}
+
+
+
+/* Seen container */
+.seen-container{
+    width: 13rem;
+    height: 6rem;
+    background-color: rgb(71, 71, 77);
+    border-radius: 6px;
+    margin-left: 0.5rem;
+}
+
+.seen-container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.9rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.seen-container{
+    width: 13rem;
+    height: 6rem;
+    background-color: rgb(71, 71, 77);
+    border-radius: 6px;
+}
+
+.seen-h3{
+    align-items: left;
+}
+
+
+
+/* Row 2 */
+.default-home-container-row-2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+
+/* Watching container */
+
+.watching-container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.9rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.watching-container{
+    width: 13rem;
+    height: 6rem;
+    background-color: rgb(71, 71, 77);
+    border-radius: 6px;
+}
+
+.watching-h3{
+    align-items: left;
+}
+
+/* First movie container */
+.first-movie-home-container{
+    width: 13rem;
+    height: 6rem;
+    background-color: rgb(71, 71, 77);
+    border-radius: 6px;
+    margin-left: 0.5rem;
+}
+
+.first-movie-home-container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.9rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.first-movie-home-container{
+    width: 13rem;
+    height: 6rem;
+    background-color: rgb(71, 71, 77);
+    border-radius: 6px;
+}
+
+.first-movie-home-h3{
+    align-items: left;
+}
+
+/* Second movie container */
+.default-home-container-row-3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+}
+
+.second-movie-home-container{
+    width: 9.7rem;
+    height: 6rem;
+    background-color: rgb(71, 71, 77);
+    border-radius: 6px;
+}
+
+.second-movie-home-container-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.9rem;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.second-movie-home-h3{
+    align-items: left;
+}
+
+
+
+
