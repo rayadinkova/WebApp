@@ -22,16 +22,18 @@ export default function DefaultListsContainers() {
           </Link>
 
           <div className="seen-container">
-            <div className="seen-container-content">
-              <div className="seen-h3">
-                <h3>Seen</h3>
-              </div>
+            <Link to="/errorpage" className="seen-link-style">
+              <div className="seen-container-content">
+                <div className="seen-h3">
+                  <h3>Seen</h3>
+                </div>
 
-              <div className="seen-status">
-                <p>2</p>
-                <BiSolidLockAlt />
+                <div className="seen-status">
+                  <p>2</p>
+                  <BiSolidLockAlt />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 

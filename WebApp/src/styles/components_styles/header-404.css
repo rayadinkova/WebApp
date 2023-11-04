@@ -1,4 +1,4 @@
-.to-watch-header-wrapper{
+.header-404-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,19 +7,7 @@
     background-color: rgba(19, 19, 23, 1);
 }
 
-.to-watch-header-icons{
+.header-404-arrow{
     font-size: 1.7rem;
-}
-
-.to-watch-search-icon{
-    margin-right: 0.5rem;
-}
-
-.to-watch-header-arrow{
-    font-size: 1.7rem;
-}
-
-.to-watch-arrow-link-style{
-    text-decoration: none;
     color: white;
 }
