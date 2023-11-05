@@ -15,8 +15,6 @@ export default function CreateListForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
   };
 
   return (
