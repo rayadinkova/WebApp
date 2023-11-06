@@ -8,6 +8,10 @@ export default function MyListsFilter() {
           <p>All</p>
         </div>
 
+        <div className="my-lists-filter-general">
+          <p>General</p>
+        </div>
+
         <div className="my-lists-filter-custom">
           <p>Custom</p>
         </div>

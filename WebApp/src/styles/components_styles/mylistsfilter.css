@@ -14,6 +14,17 @@
     align-items: center;
 }
 
+.my-lists-filter-general{
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba(48, 48, 54, 1);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
 .my-lists-filter-custom{
     width: 5rem;
     height: 2rem;

@@ -9,10 +9,10 @@ import { GoSearch } from "react-icons/go";
   /* Importing all the pages required for the navigation */
 }
 import MyLists from "../pages/MyLists";
-import ToWatch from "../pages/ToWatch";
 import CreateList from "../pages/CreateList";
 import Home from "../pages/Home";
 import ErrorPage from "../pages/404";
+import ListPage from "../pages/ListPage";
 
 export default function Navbar() {
   return (
@@ -49,9 +49,9 @@ export default function Navbar() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/mylists" element={<MyLists />} />
-        <Route path="/towatch" element={<ToWatch />} />
         <Route path="/createlist" element={<CreateList />} />
         <Route path="/errorpage" element={<ErrorPage />} />
+        <Route path="/listpage" element={<ListPage />} />
       </Routes>
     </Router>
   );
