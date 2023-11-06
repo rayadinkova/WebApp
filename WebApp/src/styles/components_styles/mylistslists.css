@@ -1,5 +1,7 @@
 .display-lists-wrapper{
     padding: 0rem 2rem 0rem 2rem;
+    display: flex;
+   
 }
 
 .display-lists-container{
@@ -7,5 +9,7 @@
     height: 9rem;
     background-color: rgba(48, 48, 54, 1);
     border-radius: 6px;
+    background-color: aqua;
+    border: 5px solid red;
 }
 

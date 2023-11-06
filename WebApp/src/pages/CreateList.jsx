@@ -1,4 +1,3 @@
-import CreateListForm from "../components/CreateListForm";
 import HeaderCreateList from "../components/Header-CreateList";
 import "../styles/pages_styles/createlist.css";
 import { useNavigate } from "react-router-dom";
@@ -14,7 +13,7 @@ export default function CreateList() {
     const newList = {
       title: title,
       description: description,
-      id: "id",
+      id: "id1",
     };
 
     const url = "https://webapp-95eff-default-rtdb.firebaseio.com/movies.json";
@@ -25,7 +24,7 @@ export default function CreateList() {
     });
 
     if (response.ok) {
-      navigate("/home");
+      navigate("/");
     } else {
       console.log("Something went wrong");
     }
@@ -44,6 +43,9 @@ export default function CreateList() {
               required
               onChange={(event) => setTitle(event.target.value)}
             />
+          </label>
+
+          <label>
             <input
               type="text"
               placeholder="Description - when are you going to watch something from this list, with who?"
@@ -52,11 +54,9 @@ export default function CreateList() {
               onChange={(event) => setDescription(event.target.value)}
             />
           </label>
+          <button className="create-list-btn">Create list</button>
         </form>
       </section>
-      <button className="create-list-btn" onClick={handleCreate}>
-        Create list
-      </button>
     </>
   );
 }
