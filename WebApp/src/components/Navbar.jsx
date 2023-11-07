@@ -10,7 +10,7 @@ import { GoSearch } from "react-icons/go";
 }
 import MyLists from "../pages/MyLists";
 import CreateList from "../pages/CreateList";
-import Home from "../pages/Home";
+
 import ErrorPage from "../pages/404";
 import ListPage from "../pages/ListPage";
 
@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="nav-wrapper">
         <nav className="navbar-container">
           <ul>
-            <Link to="/home" className="navbar-link-styles">
+            <Link to="/" className="navbar-link-styles">
               <li>
                 <GoHome className="home-icon" />
                 <p>Home</p>
@@ -47,7 +47,6 @@ export default function Navbar() {
       </div>
 
       <Routes>
-        <Route path="/home" element={<Home />} />
         <Route path="/mylists" element={<MyLists />} />
         <Route path="/createlist" element={<CreateList />} />
         <Route path="/errorpage" element={<ErrorPage />} />

@@ -13,10 +13,9 @@ export default function CreateList() {
     const newList = {
       title: title,
       description: description,
-      id: "id1",
     };
 
-    const url = "https://webapp-95eff-default-rtdb.firebaseio.com/movies.json";
+    const url = "https://webapp-95eff-default-rtdb.firebaseio.com/lists.json";
 
     const response = await fetch(url, {
       method: "POST",

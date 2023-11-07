@@ -10,7 +10,7 @@ export default function ListPage() {
   useEffect(() => {
     async function getMovies() {
       const url =
-        "https://webapp-95eff-default-rtdb.firebaseio.com/posts/movies.json";
+        "https://webapp-95eff-default-rtdb.firebaseio.com/movies.json";
       const response = await fetch(url);
       const data = await response.json();
       const moviesArray = Object.keys(data).map((key) => ({
@@ -25,6 +25,7 @@ export default function ListPage() {
   return (
     <>
       <HeaderListPage />
+      <h3>first list page</h3>
 
       <section className="grid">
         {movies.map((movies) => (
