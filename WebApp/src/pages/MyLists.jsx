@@ -1,10 +1,14 @@
-import "../index.css";
+import "../styles/pages_styles/mylists.css";
 import { useState, useEffect } from "react";
 import ListItem from "../components/ListItem";
-import CreatedList from "./CreatedList";
+import { useNavigate } from "react-router-dom";
+import { IoIosAddCircle } from "react-icons/io";
+import HeaderMyLists from "../components/Header-MyLists";
+import MyListsFilter from "../components/MyListsFilter";
 
 export default function MyLists() {
   const [lists, setLists] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function getLists() {
@@ -22,17 +26,23 @@ export default function MyLists() {
     getLists();
   }, []);
 
+  function createList() {
+    navigate("/createlist");
+  }
+
   return (
     <>
+      <HeaderMyLists />
+      <MyListsFilter />
       <section className="list-wrapper">
-        <h1>My Lists</h1>
-
         <section className="grid">
           {lists.map((list) => (
             <ListItem list={list} key={list.id} />
           ))}
         </section>
       </section>
+
+      <IoIosAddCircle className="add-list-btn" onClick={createList} />
     </>
   );
 }

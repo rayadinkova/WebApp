@@ -1,0 +1,9 @@
+.add-list-btn{
+    font-size: 5rem;
+    color:  rgba(1, 174, 193, 1);
+    position: fixed;
+    right: 0;
+    padding: 2rem;
+    bottom: 0;
+    margin-bottom: 5rem;
+}

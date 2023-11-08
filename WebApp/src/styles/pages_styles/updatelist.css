@@ -1,0 +1,89 @@
+.list-wrapper{
+padding: 2rem;
+}
+
+.update-list-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.update-list-header h1{
+    margin-left: 5rem;
+}
+
+.update-label{
+    display: flex;
+    width: 10rem;
+    margin: 2rem 0rem 0.5rem 0rem;
+}
+
+.save-btn-box{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.save-btn{
+    width: 90%;
+    height: 3rem;
+    border: none;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(1, 174, 193, 1);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10rem;
+}
+
+.delete-btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    margin-top: 8rem;
+    margin-left: -2.5rem;
+}
+
+.delete-btn{
+    position: fixed;
+    width: 90%;
+    height: 3rem;
+    border: none;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(1, 174, 193, 1);
+    color: white;
+    border-radius: 8px;
+}
+
+input{
+    margin-left: -1rem;
+    width: 18rem;
+    border-radius: 8px;
+    background-color: rgba(68, 68, 73, 1);
+    color: white;
+    padding: 1rem;
+    border: none;
+}
+
+.update-label{
+    font-size: 18px;
+    margin-left: -1rem;
+}
+
+.name{
+    height: 3rem;
+}
+
+.description{
+    height: 13rem;
+}

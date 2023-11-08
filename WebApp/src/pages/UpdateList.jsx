@@ -1,6 +1,7 @@
-import "../index.css";
+import "../styles/pages_styles/updatelist.css";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { BiSolidLeftArrow } from "react-icons/bi";
 
 export default function UpdateList() {
   const [list, setList] = useState({});
@@ -60,12 +61,21 @@ export default function UpdateList() {
     }
   }
 
+  function goBack() {
+    navigate("/lists");
+  }
   return (
     <>
+      <div className="update-list-header" onClick={goBack}>
+        <BiSolidLeftArrow className="update-list-arrow" />
+
+        <h1 className="update-list-header-h1">Edit list</h1>
+      </div>
       <section className="list-wrapper">
         <form onSubmit={UpdateList}>
-          <label>Edit name</label>
+          <label className="update-label">Edit name</label>
           <input
+            className="name"
             type="text"
             placeholder="Type a caption"
             value={title}
@@ -73,8 +83,9 @@ export default function UpdateList() {
             onChange={(event) => setTitle(event.target.value)}
           />
 
-          <label>Edit description</label>
+          <label className="update-label">Edit description</label>
           <input
+            className="description"
             type="text"
             placeholder="Type a caption"
             value={description}
@@ -82,9 +93,16 @@ export default function UpdateList() {
             onChange={(event) => setDescription(event.target.value)}
           />
 
-          <button>Save</button>
+          <div className="save-btn-box">
+            <button className="save-btn">Save</button>
+          </div>
         </form>
-        <button onClick={deleteList}>Delete</button>
+
+        <div className="delete-btn-box">
+          <button className="delete-btn" onClick={deleteList}>
+            Delete
+          </button>
+        </div>
       </section>
     </>
   );

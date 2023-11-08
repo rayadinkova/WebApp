@@ -1,6 +1,7 @@
-import "../index.css";
+import "../styles/pages_styles/createlist.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { BiSolidLeftArrow } from "react-icons/bi";
 
 export default function CreateList() {
   const [title, setTitle] = useState("");
@@ -28,27 +29,41 @@ export default function CreateList() {
     }
   }
 
+  function goBack() {
+    navigate("/lists");
+  }
+
   return (
     <>
+      <div className="create-list-header">
+        <BiSolidLeftArrow className="create-list-arrow" onClick={goBack} />
+
+        <h1 className="create-list-header-h1">Create list</h1>
+      </div>
+
       <section className="list-wrapper">
         <form onSubmit={handleCreate}>
-          <label>List name </label>
+          <label className="update-label">List name </label>
           <input
+            className="name"
             type="text"
             placeholder="Give your list a name"
             value={title}
             onChange={(event) => setTitle(event.target.value)}
           />
 
-          <label>List description </label>
+          <label className="update-label">List description </label>
           <input
+            className="description"
             type="text"
             placeholder="Description - when are you going to watch something from this list, with who?"
             value={description}
             onChange={(event) => setDescription(event.target.value)}
           />
 
-          <button>Create list</button>
+          <div className="create-btn-box">
+            <button className="create-btn">Create list</button>
+          </div>
         </form>
       </section>
     </>

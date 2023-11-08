@@ -1,0 +1,43 @@
+.create-list-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.create-list-header h1{
+    margin-left: 5rem;
+}
+
+.create-label{
+    display: flex;
+    width: 10rem;
+    margin: 2rem 0rem 0.5rem 0rem;
+}
+
+.list-wrapper{
+    padding: 2rem;
+}
+
+.create-btn-box{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.create-btn{
+    width: 90%;
+    height: 3rem;
+    border: none;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(1, 174, 193, 1);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 5.5rem;
+}

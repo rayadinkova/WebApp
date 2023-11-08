@@ -1,4 +1,4 @@
-import "../index.css";
+import "../styles/pages_styles/createdlist.css";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import HeaderCreatedList from "../components/Header-CreatedList";
@@ -66,7 +66,9 @@ export default function CreatedList() {
     <>
       <HeaderCreatedList list={list} />
 
-      <p>{list.description}</p>
+      <div className="created-list-content">
+        <p>{list.description}</p>
+      </div>
     </>
   );
 }
