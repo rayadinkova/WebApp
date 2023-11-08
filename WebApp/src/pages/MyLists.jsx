@@ -1,7 +1,7 @@
-import "../index.css";
+import "../styles/pages_styles/mylists.css";
 import { useState, useEffect } from "react";
 import ListItem from "../components/ListItem";
-import CreatedList from "./CreatedList";
+
 
 export default function MyLists() {
   const [lists, setLists] = useState([]);
