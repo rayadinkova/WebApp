@@ -15,8 +15,6 @@
 
 }
 
-
-
 .list-container{
   background-color: rgba(48, 48, 54, 1);
   color: white;
@@ -34,4 +32,9 @@ h3{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+}
+
+
+.list-wrapper{
+  padding: 1rem;
 }
