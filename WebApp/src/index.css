@@ -1,2 +1,62 @@
+body{
+  background-color: rgba(24, 24, 28, 1);
+  color: white;
+}
+
+/* nav */
 
 
+/* section - grid */
+.grid{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+
+.list-wrapper{
+  width: 1rem;
+}
+
+.list-container{
+  background-color: rgba(48, 48, 54, 1);
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+  width: 7rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Header - create list */
+.create-list-header-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: rgba(19, 19, 23, 1);
+}
+
+.create-list-header-wrapper h1{
+  margin-left: 2rem;
+  color: white;
+}
+
+.create-list-header-arrow{
+  color: white;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.dots{
+  font-size: 2rem;
+}

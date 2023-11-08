@@ -1,12 +1,11 @@
-import HeaderCreateList from "../components/Header-CreateList";
-import "../styles/pages_styles/createlist.css";
+import "../index.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 export default function CreateList() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const navigate = useNavigate("");
+  const navigate = useNavigate();
 
   async function handleCreate(event) {
     event.preventDefault();
@@ -23,7 +22,7 @@ export default function CreateList() {
     });
 
     if (response.ok) {
-      navigate("/");
+      navigate("/lists");
     } else {
       console.log("Something went wrong");
     }
@@ -31,29 +30,25 @@ export default function CreateList() {
 
   return (
     <>
-      <HeaderCreateList />
-      <section className="create-list">
+      <section className="list-wrapper">
         <form onSubmit={handleCreate}>
-          <label>
-            <input
-              type="text"
-              placeholder="Give your list a name"
-              value={title}
-              required
-              onChange={(event) => setTitle(event.target.value)}
-            />
-          </label>
+          <label>List name </label>
+          <input
+            type="text"
+            placeholder="Give your list a name"
+            value={title}
+            onChange={(event) => setTitle(event.target.value)}
+          />
 
-          <label>
-            <input
-              type="text"
-              placeholder="Description - when are you going to watch something from this list, with who?"
-              value={description}
-              required
-              onChange={(event) => setDescription(event.target.value)}
-            />
-          </label>
-          <button className="create-list-btn">Create list</button>
+          <label>List description </label>
+          <input
+            type="text"
+            placeholder="Description - when are you going to watch something from this list, with who?"
+            value={description}
+            onChange={(event) => setDescription(event.target.value)}
+          />
+
+          <button>Create list</button>
         </form>
       </section>
     </>

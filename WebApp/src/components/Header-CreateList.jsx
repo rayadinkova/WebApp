@@ -1,14 +1,20 @@
-import "../styles/components_styles/header-createlist.css";
 import { BiSolidLeftArrow } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderCreateList() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/lists");
+  }
+
   return (
     <>
       <div className="create-list-header-wrapper">
-        <Link to="/home">
-          <BiSolidLeftArrow className="create-list-header-arrow" />
-        </Link>
+        <BiSolidLeftArrow
+          className="create-list-header-arrow"
+          onClick={handleClick}
+        />
 
         <h1>Create a new list</h1>
       </div>
