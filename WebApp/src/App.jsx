@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route path="/lists" element={<MyLists />} />
           <Route path="/createlist" element={<CreateList />} />
-          <Route path="/lists/:listId" element={<UpdateList />} />
-          <Route path="/createdlist" element={<CreatedList />} />
+          <Route path="/lists/:listId" element={<CreatedList />} />
+          <Route path="/updatelist/:listId" element={<UpdateList />} />
         </Routes>
       </main>
     </>

@@ -5,7 +5,7 @@ export default function ListItem({ list }) {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/createdlist");
+    navigate(`/lists/${list.id}`);
   }
 
   return (

@@ -83,9 +83,8 @@ export default function UpdateList() {
           />
 
           <button>Save</button>
-
-          <button onClick={deleteList}>Delete</button>
         </form>
+        <button onClick={deleteList}>Delete</button>
       </section>
     </>
   );
