@@ -1,10 +1,11 @@
 import "../styles/pages_styles/mylists.css";
+import "../styles/pages_styles/mylists.css";
 import { useState, useEffect } from "react";
 import ListItem from "../components/ListItem";
 import { useNavigate } from "react-router-dom";
-import { IoIosAddCircle } from "react-icons/io";
 import HeaderMyLists from "../components/Header-MyLists";
 import MyListsFilter from "../components/MyListsFilter";
+import { IoIosAddCircle } from "react-icons/io";
 
 export default function MyLists() {
   const [lists, setLists] = useState([]);

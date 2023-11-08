@@ -3,39 +3,6 @@ body{
   color: white;
 }
 
-/* nav */
-
-
-/* section - grid */
-.grid{
-  display: grid;
-  grid-template-columns:  1fr 1fr;
-}
-
-.list-wrapper{
-  width: 1rem;
-}
-
-.list-container{
-  background-color: rgba(48, 48, 54, 1);
-  color: white;
-  border-radius: 6px;
-  padding: 8px;
-  width: 7rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-@media (min-width: 600px) {
-  .grid {
-      grid-template-columns: 1fr 1fr;
-  }
-}
-
 /* Header - create list */
 .create-list-header-wrapper{
   display: flex;
