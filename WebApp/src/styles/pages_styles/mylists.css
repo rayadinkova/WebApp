@@ -9,5 +9,28 @@
 }
 
 .grid{
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+.list-container{
+  background-color: rgba(48, 48, 54, 1);
+  color: white;
+  border-radius: 6px;
+  height: 168px;
+}
+
+h3{
+  margin-left: 8px;
+  margin-bottom: 8px;
+  margin-top: 129px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }

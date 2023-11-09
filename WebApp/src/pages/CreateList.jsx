@@ -41,7 +41,7 @@ export default function CreateList() {
         <h1 className="create-list-header-h1">Create list</h1>
       </div>
 
-      <section className="list-wrapper">
+      <section className="create-list-wrapper">
         <form onSubmit={handleCreate}>
           <label className="update-label">List name </label>
           <input
