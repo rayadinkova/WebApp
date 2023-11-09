@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { BiSolidLeftArrow } from "react-icons/bi";
 
+//Raya - creating the page and implementing the functionality
+
 export default function UpdateList() {
   const [list, setList] = useState({});
   const [title, setTitle] = useState("");
@@ -64,6 +66,9 @@ export default function UpdateList() {
   function goBack() {
     navigate("/lists");
   }
+
+  //Raya, Eva - passing props and functionality into the form and the input fields
+
   return (
     <>
       <div className="update-list-header" onClick={goBack}>

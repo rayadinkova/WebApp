@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import HeaderCreatedList from "../components/Header-CreatedList";
 
+//Raya - creating the page and adding functionality, like capturing the current state of the list you've clicked
 export default function CreatedList() {
   const [list, setList] = useState({});
   const [title, setTitle] = useState("");

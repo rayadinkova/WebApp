@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import UpdateList from "./pages/UpdateList";
 import CreateList from "./pages/CreateList";
 import MyLists from "./pages/MyLists";
@@ -10,6 +10,8 @@ function App() {
   return (
     <>
       <Navbar />
+
+      {/* Raya - defining paths to the different pages */}
       <main>
         <Routes>
           <Route path="/lists" element={<MyLists />} />

@@ -4,6 +4,8 @@ import { FiSearch } from "react-icons/fi";
 import { FiBookmark } from "react-icons/fi";
 import { GoHome } from "react-icons/go";
 
+//Raya - creating the navbar
+
 export default function Navbar() {
   return (
     <nav className="nav-container">

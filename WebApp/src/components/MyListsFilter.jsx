@@ -1,6 +1,7 @@
 import "../styles/components_styles/mylistsfilter.css";
 import { TbFilterFilled } from "react-icons/tb";
 
+////Raya - creating the page layout and styling
 export default function MyListsFilter() {
   return (
     <>
@@ -12,12 +13,10 @@ export default function MyListsFilter() {
 
           <div className="custom">Custom</div>
         </div>
-  
 
-      <div className="filter">
-        <TbFilterFilled className="filter-icon" />
-      </div>
-
+        <div className="filter">
+          <TbFilterFilled className="filter-icon" />
+        </div>
       </div>
     </>
   );

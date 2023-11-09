@@ -2,6 +2,7 @@ import "../styles/pages_styles/404.css";
 import Header404 from "../components/Header-404";
 import { Link } from "react-router-dom";
 
+//Raya - creating the ErrorPage layout
 export default function ErrorPage() {
   return (
     <>

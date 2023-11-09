@@ -2,6 +2,7 @@ import "../styles/components_styles/header-mylists.css";
 import { FiSearch } from "react-icons/fi";
 import { GoBell } from "react-icons/go";
 
+//Raya - creating the page layout and functionality
 export default function HeaderMyLists() {
   return (
     <>

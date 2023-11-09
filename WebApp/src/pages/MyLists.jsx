@@ -7,6 +7,7 @@ import HeaderMyLists from "../components/Header-MyLists";
 import MyListsFilter from "../components/MyListsFilter";
 import { IoIosAddCircle } from "react-icons/io";
 
+// Raya - retreiving lists data from firebase
 export default function MyLists() {
   const [lists, setLists] = useState([]);
   const navigate = useNavigate();
@@ -30,6 +31,8 @@ export default function MyLists() {
   function createList() {
     navigate("/createlist");
   }
+
+  // Eva - mapping over the list object
 
   return (
     <>
