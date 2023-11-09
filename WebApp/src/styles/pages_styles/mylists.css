@@ -8,3 +8,6 @@
     margin-bottom: 5rem;
 }
 
+.grid{
+  flex-wrap: wrap;
+}
