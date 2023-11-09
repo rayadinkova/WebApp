@@ -1,4 +1,4 @@
-.list-wrapper{
+.update-list-wrapper{
 padding: 2rem;
 }
 
@@ -49,7 +49,7 @@ padding: 2rem;
     width: 100%;
     position: fixed;
     margin-top: 8rem;
-    margin-left: -2.5rem;
+    margin-left: -2rem;
 }
 
 .delete-btn{

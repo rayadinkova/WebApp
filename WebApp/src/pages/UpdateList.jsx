@@ -71,7 +71,7 @@ export default function UpdateList() {
 
         <h1 className="update-list-header-h1">Edit list</h1>
       </div>
-      <section className="list-wrapper">
+      <section className="update-list-wrapper">
         <form onSubmit={UpdateList}>
           <label className="update-label">Edit name</label>
           <input
