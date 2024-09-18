@@ -1,4 +1,4 @@
-# Webapp
+# WebApp
 3rd semester project - Busness Academy Aarhus
 
 ListIt is a 3rd semester academic project focused on creating a Movie Catalogue App. The product targets movie collectors allowing them to catalogue and manage their movie collections.
