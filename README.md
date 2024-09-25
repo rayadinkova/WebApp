@@ -1,6 +1,8 @@
 # WebApp
 3rd semester project - Busness Academy Aarhus
 
+🔗 [Figma prototype](https://www.figma.com/design/A7A0omOxkfpv7cW1KqynDp/Webapp?node-id=0-1&node-type=canvas&t=EunAJtOFKGcQOOAv-0)
+
 ListIt is a 3rd semester academic project focused on creating a Movie Catalogue App. The product targets movie collectors allowing them to catalogue and manage their movie collections.
 
 <h3>Technologies used:</h3>
